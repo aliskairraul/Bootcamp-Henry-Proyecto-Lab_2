@@ -1,0 +1,9 @@
+jupyter==1.1.1
+pandas==2.2.2
+polars==1.7.1
+plotly==5.24.1
+fastexcel==0.11.6
+duckdb==1.1.0
+pyarrow==17.0.0
+sqlalchemy==2.0.35
+PyMySQL==1.1.1

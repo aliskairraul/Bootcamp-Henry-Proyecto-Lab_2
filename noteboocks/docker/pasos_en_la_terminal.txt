@@ -1,0 +1,41 @@
+# Para Jalar la Imagen de Docker-Hub
+    docker build --no-cache -t mysql_8035 .
+
+# Para Instanciar un Contenedor a partir de la Imagen 
+    docker run --name mysql_labs_2 -p 3306:3306 -v ${PWD}/DATADB:/var/lib/mysql -e MYSQL_ROOT_PASSWORD='root' -d mysql_8035
+           
+# Para Iniciar el Contenedor
+    docker start mysql_labs_2
+
+# Para detener el Contenedor
+    docker stop mysql_labs_2
+
+Instrucciones:
+1) Ubique el archivo Dockerfile en la ubicacion de su preferencia dentro de su ordenador. Tome en cuenta que en esa ubicación se generará un respaldo de la Base de datos
+2) Desde la Terminal y en la misma ubicación del archivo 
+docker build --no-cache -t mysql_8035 .
+3) Una vez alla generado la imagen proceda a Instanciar un Contenedor
+docker run --name mysql_labs_2 -p 3306:3306 -v ${PWD}/DATADB:/var/lib/mysql -e MYSQL_ROOT_PASSWORD='root' -d mysql_8035
+
+4) Si tiene mysql en su computador y no desea utilizar docker Omita los pasos de generar el Contenedor.
+5) Si tiene mysql en su computador y va a utilizar docker, tiene dos opciones
+    a) Entre en la terminal con permisos de administrador y ejecute el siguiente comando
+        net stop MySQL80 
+        una vez deje de utilizar el contenedor volver a activar su servicio mysql con el siguiente comando
+        net start MySQL80 
+    b) Si no desea detener su servicio, en el punto 3) cambie el primero de los `3306` por otro puerto para no interferir con el puerto habitual que su mysql utiliza en su maquina.  Dirijase al archivo `db/connection.py` localice las siguientes lineas 
+
+    host = "localhost"
+    user = "root"
+    password = "root"
+    db_name = "db_labs_2"   <----------------- Nombre de la Base de Datos
+    motor_sql = "mysql"
+    connector_used = "pymysql"
+    port = 3306     <--------------------Aqui colocar el puerto que escogió
+
+    c) Cree en Mysql una Base de Datos con el Nombre "db_labs_2" 
+    d) En la terminal con el entorno activado ejecute el archivo `db/create_tables.py`
+        python create_tables.py
+       y automaticamente se creara todas las tablas y relaciones de la base de datos y estará lista para usarse
+
+Nota: Lo de Mysql es solo para dejar la Información a la Empresa Normalizada y estructurada para seguir introduciendo datos.  El análisis y Visualización lo llevo adelante con archivos .parquet 

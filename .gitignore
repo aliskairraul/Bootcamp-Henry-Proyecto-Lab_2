@@ -1,0 +1,8 @@
+# Excluir el entorno virtual de Python
+venv/
+
+# Excluir el archivo .flake8
+.flake8
+
+# Excluir todas las carpetas __pycache__
+__pycache__/
