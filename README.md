@@ -19,55 +19,62 @@ Los KPI empleados fueron:</p>
 - **Crecimiento Trimestral de 2% en el número de Accesos por cada 100 Hogares por Provincia**:
   <p style="text-align: justify; text-indent: 2em;">
   Donde el Objetivo para el siguiente Trimestre se fijará simplemente añadiendo un 2% a los accesos por cada 100 Hogares del trimestre actual. Y cuando lleguemos en el tiempo al siguiente trimestre, la Medición del cumplimiento de dicho objetivo sería de la siguiente manera:</p>
-
-  $$
-  \text{Cumplimiento KPI} = \left( \frac{\text{Acc 100 Hog Trim}}{\text{Objetivo KPI}} \right) \times 100
-  $$
-
-    <br>
-
-- **Crecimiento Trimestral de 5% en la Velocidad Media de Bajada por Provincia**:
-  <p style="text-align: justify; text-indent: 2em;">
-   Donde el Objetivo para el siguiente Trimestre se fijará simplemente añadiendo un 5% a la velocidad del Trimestre actual. Y cuando lleguemos en el tiempo al siguiente trimestre, la Medición del cumplimiento de dicho objetivo sería de la siguiente manera:</p>
-
-  $$
-  \text{Cumplimiento KPI} = \left( \frac{\text{Vel Mbps Trim}}{\text{Objetivo KPI}} \right) \times 100
-  $$
-
-    <br>
-    <p style="text-align: justify; text-indent: 2em;">
-    Las Métricas utilizadas fueron:</p>
-
-- **Variación Trimestral del número de Accesos por cada 100 Hogares en el País**:
-    <p style="text-align: justify; text-indent: 2em;">
-    El cálculo de la métrica se realiza de la siguiente manera:</p>
-
-  $$
-  \text{Var Accesos 100 Hog} = \left( \frac{\text{Accesos Trimestre}}{\text{Accesos Trimestre Anterior}} - 1 \right) \times 100
-  $$
-
   <br>
 
-- **Variación Trimestral de la Velocidad Media de Bajada en el País**:
+$$
+\text{Cumplimiento KPI} = \left( \frac{\text{Acc 100 Hog Trim}}{\text{Objetivo KPI}} \right) \times 100
+$$
+
+<br>
+<br>
+- **Crecimiento Trimestral de 5% en la Velocidad Media de Bajada por Provincia**:
   <p style="text-align: justify; text-indent: 2em;">
-  El cálculo de la métrica se realiza de la siguiente manera:</o>
+  Donde el Objetivo para el siguiente Trimestre se fijará simplemente añadiendo un 5% a la velocidad del Trimestre actual. Y cuando lleguemos en el tiempo al siguiente trimestre, la Medición del cumplimiento de dicho objetivo sería de la siguiente manera:</p>
+  <br>
 
-  $$
-  \text{Var Mbps} = \left( \frac{\text{Vel Mbps Trim}}{\text{Vel Mbps Trim Anterior}} - 1 \right) \times 100
-  $$
+$$
+\text{Cumplimiento KPI} = \left( \frac{\text{Vel Mbps Trim}}{\text{Objetivo KPI}} \right) \times 100
+$$
 
+<br>
+<br>
+      <p style="text-align: justify; text-indent: 2em;">
+      Las Métricas utilizadas fueron:</p>
+
+- **Variación Trimestral del número de Accesos por cada 100 Hogares en el País**:
+  <p style="text-align: justify; text-indent: 2em;">
+  El cálculo de la métrica se realiza de la siguiente manera:</p>
+  <br>
+
+$$
+\text{Var Accesos 100 Hog} = \left( \frac{\text{Accesos Trimestre}}{\text{Accesos Trimestre Anterior}} - 1 \right) \times 100
+$$
+
+<br>
+<br>
+- **Variación Trimestral de la Velocidad Media de Bajada en el País**:
+    <p style="text-align: justify; text-indent: 2em;">
+    El cálculo de la métrica se realiza de la siguiente manera:</p>
+  <br>
+
+$$
+\text{Var Mbps} = \left( \frac{\text{Vel Mbps Trim}}{\text{Vel Mbps Trim Anterior}} - 1 \right) \times 100
+$$
+
+<br>
+<br>
 - **Total de Accesos en el País**:
   <p style="text-align: justify; text-indent: 2em;">
    Simplemente se monitorea el <b>Total de Accesos en el país en el Trimestre en curso</b>
   <br>
 
-    <p style="text-align: justify; text-indent: 2em;">
-  Para facilitar la comprensión y visualización de los datos, desarrollamos una herramienta interactiva utilizando Python y el framework Dash de la librería Plotly. Esta herramienta permite a los usuarios explorar los datos de manera intuitiva y obtener insights valiosos.</p><br>
-    <br>
-  <image src='assets/capture_tooltip.png'><br>
-  <br>
-  <image src='assets/capture_mapa_oportunidades.png'><br>
-  <br>
+<p style="text-align: justify; text-indent: 2em;">
+Para facilitar la comprensión y visualización de los datos, desarrollamos una herramienta interactiva utilizando Python y el framework Dash de la librería Plotly. Esta herramienta permite a los usuarios explorar los datos de manera intuitiva y obtener insights valiosos.</p><br>
+<br>
+<image src='assets/capture_tooltip.png'><br>
+<br>
+<image src='assets/capture_mapa_oportunidades.png'><br>
+<br>
 
 <p style="text-align: justify; text-indent: 2em;">
 Previo al análisis, normalizamos los datos y creamos un modelo de datos en SQL (EDR) funcional para la empresa, que sirve como un data warehouse. Este modelo no solo organiza los datos de manera eficiente, sino que también está diseñado para soportar futuros estudios y análisis. EL EDR creado se puede observar en la siguiente Imagen<br></p>
