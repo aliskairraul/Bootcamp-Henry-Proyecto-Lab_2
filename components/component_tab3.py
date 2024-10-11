@@ -12,7 +12,6 @@ def retorna_tab3(periodos: list) -> html.Div:
         html.Div: Contenedor General del Tablero
     """
     component_tab_3 = html.Div([
-        # html.Div([retorna_tab3_left(periodos=periodos)], className='tab_subcontainers', id='tab3_left'),
         html.Div([
             html.Div([
                 html.Div([retorna_tab3_drop(periodos=periodos)], className='tab_subcontainers', id='drop_tab3'),

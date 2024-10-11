@@ -27,7 +27,7 @@ $$
 
 <br>
 <br>
-- **Crecimiento Trimestral de 5% en la Velocidad Media de Bajada por Provincia**:
+- Crecimiento Trimestral de 5% en la Velocidad Media de Bajada por Provincia:
   <p style="text-align: justify; text-indent: 2em;">
   Donde el Objetivo para el siguiente Trimestre se fijará simplemente añadiendo un 5% a la velocidad del Trimestre actual. Y cuando lleguemos en el tiempo al siguiente trimestre, la Medición del cumplimiento de dicho objetivo sería de la siguiente manera:</p>
   <br>
@@ -41,7 +41,7 @@ $$
       <p style="text-align: justify; text-indent: 2em;">
       Las Métricas utilizadas fueron:</p>
 
-- **Variación Trimestral del número de Accesos por cada 100 Hogares en el País**:
+- Variación Trimestral del número de Accesos por cada 100 Hogares en el País:
   <p style="text-align: justify; text-indent: 2em;">
   El cálculo de la métrica se realiza de la siguiente manera:</p>
   <br>
@@ -52,7 +52,7 @@ $$
 
 <br>
 <br>
-- **Variación Trimestral de la Velocidad Media de Bajada en el País**:
+- Variación Trimestral de la Velocidad Media de Bajada en el País:
     <p style="text-align: justify; text-indent: 2em;">
     El cálculo de la métrica se realiza de la siguiente manera:</p>
   <br>
@@ -63,7 +63,7 @@ $$
 
 <br>
 <br>
-- **Total de Accesos en el País**:
+- Total de Accesos en el País:
   <p style="text-align: justify; text-indent: 2em;">
    Simplemente se monitorea el <b>Total de Accesos en el país en el Trimestre en curso</b>
   <br>
@@ -83,8 +83,8 @@ Previo al análisis, normalizamos los datos y creamos un modelo de datos en SQL 
 <image src='noteboocks/assets/edr.png'>
 
 <p style="text-align: justify; text-indent: 2em;">
-Este proyecto no sdlo demuestra habilidades técnicas en análisis de datos y visualización, sino también una comprensión profunda del sector de telecomunicaciones y la capacidad de transformar datos complejos en información útil para la toma de decisiones estratégicas.</p>
 
+Este proyecto no sólo demuestra habilidades técnicas en análisis de datos y visualización, sino también una comprensión profunda del sector de telecomunicaciones y la capacidad de transformar datos complejos en información útil para la toma de decisiones estratégicas.</p>
 ## Tabla de contenido
 
 1. [Descripción](#descripción)
@@ -283,6 +283,9 @@ Realizar un análisis de costo-beneficio detallado del sector de Internet es ese
 <p style="text-align: justify; text-indent: 2em;">
 Dado que las tecnologías CableModem y Fibra Óptica tienen limitaciones en áreas de baja densidad poblacional, se recomienda estudiar la viabilidad de tecnologías inalámbricas de alta velocidad, como la tecnología satelital, para penetrar en estos mercados. Esto podría representar una gran oportunidad para expandir la cobertura de Internet en localidades con menor número de habitantes.
 </p>
+
+Despliegue: https://huggingface.co/spaces/raulstudent/labs_2 <br>
+Video Explicativo: https://drive.google.com/file/d/1BdyTZxUi7pJMGZ3AFkHliJDtshQ7c2oo/view?usp=sharing
 
 ## Autores:
 
